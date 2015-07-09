@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+<head></head>
+<body>
+<form method=post>
+<input type="textarea"value="enter your complaint here" name="complaint"></input>
+<input value="submit" type="submit"></input>
+</form>
+
+<ul>
+{% for complaint in complaints %}
+<li>{{complaint}}</li>
+{% endfor %}
+</ul>
+</body>
+</html>
